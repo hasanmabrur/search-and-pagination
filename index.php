@@ -15,7 +15,7 @@
 <nav class="navbar navbar-dark bg-dark">
   <a href="https://mabrur.my.id" class="navbar-brand text-white">Hasan Mabrur</a>
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" id="keyword" name="keyword" aria-label="Search" value="<?php if (isset($_GET['keyword']))  echo $_GET['keyword']; ?>">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
